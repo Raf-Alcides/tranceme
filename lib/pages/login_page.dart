@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tranceme/config/custom_colors.dart';
+import 'package:tranceme/pages/base_page.dart';
 import 'package:tranceme/pages/components/inputs.dart';
 import 'package:tranceme/pages/register_page.dart';
 
@@ -39,7 +40,13 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               height: 50,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (_) {
+                      return const BasePage();
+                    })
+                  );
+                },
                 style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(

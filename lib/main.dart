@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tranceme/config/custom_colors.dart';
 import 'package:tranceme/splash_screen.dart';
 
 void main() {
@@ -13,7 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Trance-me',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: CustomColors.primaryColor
+        )
       ),
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),

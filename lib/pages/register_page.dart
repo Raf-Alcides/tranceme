@@ -18,7 +18,7 @@ class _RegisterPageState extends State<RegisterPage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 20), 
+          padding: const EdgeInsets.symmetric(horizontal: 20), 
           children: [
             const SizedBox(height: 10,),
             Inputs(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tranceme/config/custom_colors.dart';
 import 'package:tranceme/pages/components/inputs.dart';
+import 'package:tranceme/pages/register_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -60,29 +61,47 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             //botao de login com o google
             Container(
               height: 50,
               decoration: const BoxDecoration(color: Colors.white),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-              
-                children: [
-                  Image.asset('assets/images/googleIcon.png'),
-                  const SizedBox(width: 30,),
-                  const Text('Continuar com o google', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),)
-                ]),
+              child:
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                Image.asset('assets/images/googleIcon.png'),
+                const SizedBox(
+                  width: 30,
+                ),
+                const Text(
+                  'Continuar com o google',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                )
+              ]),
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             //botao de criar senha
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+                  return const RegisterPage();
+                }));
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text('Novo?', style: TextStyle(fontSize: 16),),
-                  Text('C̲r̲i̲e̲ ̲u̲m̲a̲ ̲c̲o̲n̲t̲a̲ ̲a̲g̲o̲r̲a̲', style: TextStyle(fontSize: 16, color: CustomColors.textColor),)
+                  const Text(
+                    'Novo?',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  Text(
+                    'C̲r̲i̲e̲ ̲u̲m̲a̲ ̲c̲o̲n̲t̲a̲ ̲a̲g̲o̲r̲a̲',
+                    style:
+                        TextStyle(fontSize: 16, color: CustomColors.textColor),
+                  )
                 ],
               ),
             )

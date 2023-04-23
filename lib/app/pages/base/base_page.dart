@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tranceme/config/custom_colors.dart';
-import 'package:tranceme/pages/home_tab.dart';
+import 'package:tranceme/app/config/custom_colors.dart';
+import 'package:tranceme/app/pages/home/home_tab.dart';
 
 class BasePage extends StatefulWidget {
 

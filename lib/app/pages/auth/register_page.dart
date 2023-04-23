@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tranceme/config/custom_colors.dart';
-import 'package:tranceme/pages/components/inputs.dart';
+import 'package:tranceme/app/config/custom_colors.dart';
+import 'package:tranceme/app/pages/auth/components/inputs.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);

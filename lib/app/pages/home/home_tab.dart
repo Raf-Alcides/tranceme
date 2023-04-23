@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tranceme/config/custom_colors.dart';
+import 'package:tranceme/app/config/custom_colors.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({Key? key}) : super(key: key);

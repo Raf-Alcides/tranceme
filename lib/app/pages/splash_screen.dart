@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'config/custom_colors.dart';
-import 'pages/login_page.dart';
+import '../config/custom_colors.dart';
+import 'auth/login_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
